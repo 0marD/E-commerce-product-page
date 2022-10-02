@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- css styles -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- script -->
+  <script defer src="./main.js"></script>
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="nav--modal__background">
+    <nav class="nav--modal">
+      <img src="./images/icon-close.svg" alt="menu close icon" class="nav--modal__menu">
+      <ul class="nav--modal__items">
+        <li><a href="#collections" class="nav--modal__items__link">Collections</a></li>
+        <li><a href="#men" class="nav--modal__items__link">Men</a></li>
+        <li><a href="#women" class="nav--modal__items__link">Women</a></li>
+        <li><a href="#about" class="nav--modal__items__link">About</a></li>
+        <li><a href="#contact" class="nav--modal__items__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header">
+    <img src="./images/icon-menu.svg" alt="Menu icon" class="header__hamburger">
+    <img src="./images/logo.svg" alt="Sneakers logo" class="header__logo">
+
+    <nav class="header__nav">
+      <ul class="header__nav__items">
+        <li><a href="#" class="header__nav__items__link">Collections</a></li>
+        <li><a href="#" class="header__nav__items__link">Men</a></li>
+        <li><a href="#" class="header__nav__items__link">Women</a></li>
+        <li><a href="#" class="header__nav__items__link">About</a></li>
+        <li><a href="#" class="header__nav__items__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__cart-avatar">
+      <div class="header__cart-avatar__cart">
+        <div class="header__cart-avatar__cart__notification">0</div>
+        <img src="./images/icon-cart.svg" alt="Cart icon" class="header__cart-avatar__cart__icon">
+      </div>
+      <div class="header__cart-avatar__avatar"></div>
+    </div>
+  </header>
+  <!-- modal cart -->
+  <div class="cart-modal">
+    <p class="cart-modal__heading">Cart</p>
+    <p class="cart-modal__empty">Your cart is empty</p>
+    <section class="cart-modal__contents">
+      <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail product" class="cart-modal__contents__image">
+      <div class="cart-modal__contents__data">
+        <h3 class="cart-modal__contents__product-name">Autumm Limited Edition</h3>
+        <p class="cart-modal__contents__price"></p>
+      </div>
+      <figure class="cart-modal__contents__delete">
+        <img src="./images/icon-delete.svg" alt="Trash icon">
+      </figure>
+    </section>
+    <button class="cart-modal__contents__button">Checkout</button>
+  </div>
+  <!-- modal cart -->
+  <main class="main">
+    <section class="gallery">
+      <div class="gallery__container">
+        <img src="./images/icon-previous.svg" alt="Prevous chevron icon" class="gallery__image--previous"
+          title="Previous image">
+        <figure class="gallery__image"></figure>
+        <img src="./images/icon-next.svg" alt="Next chevron icon" class="gallery__image--next" title="Next image">
+      </div>
+      <div class="gallery__thumbnails">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail product one"
+          class="gallery__thumbnails__thumbnail" id="1">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail product two"
+          class="gallery__thumbnails__thumbnail" id="2">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail product three"
+          class="gallery__thumbnails__thumbnail" id="3">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail product four"
+          class="gallery__thumbnails__thumbnail" id="4">
+      </div>
+    </section>
+    <section class="details">
+      <h3 class="details__company">Sneaker Company</h3>
+      <h2 class="details__heading">Fall Limited Edition Sneakers</h2>
+      <p class="details__description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="details__prices">
+        <p class="details__prices__current">$125.00<span class="details__prices__current__discount">50%</span></p>
+        <p class="details__prices__before">$250.00</p>
+      </div>
+      <div class="details__quantity">
+        <div class="input">
+          <img src="./images/icon-minus.svg" alt="Minus icon" class="input__minus">
+          <input type="number" name="input__number" id="" value="0" class="input__number">
+          <img src="./images/icon-plus.svg" alt="Plus icon" class="input__plus">
+        </div>
+        <button class="details__quantity__button"><img src="./images/icon-cart-white.svg" alt="Add to cart icon"
+            class="details__quantity__button__icon">Add
+          to cart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- gallery modal -->
+  <div class="gallery-modal__background">
+    <article class="gallery-modal">
+      <img src="./images/icon-close.svg" alt="close icon" class="gallery-modal__exit-icon" title="Close">
+      <div class="gallery-modal__image">
+        <img src="./images/icon-previous.svg" alt="Prevous chevron icon" class="gallery-modal__image--previous"
+          title="Previous image">
+        <img src="./images/icon-next.svg" alt="Next chevron icon" class="gallery-modal__image--next" title="Next image">
+      </div>
+      <div class="gallery-modal__thumbnails">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail product one"
+          class="gallery-modal__thumbnails__thumbnail" id="m1">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail product two"
+          class="gallery-modal__thumbnails__thumbnail" id="m2">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail product three"
+          class="gallery-modal__thumbnails__thumbnail" id="m3">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail product four"
+          class="gallery-modal__thumbnails__thumbnail" id="m4">
+      </div>
+    </article>
+  </div>
+  <!-- gallery modal -->
+
+  <footer class="attribution">
+    <p class="attribution__line">Challenge by <a class="attribution__line__link"
+        href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p class="attribution__line">Coded by <a class="attribution__line__link" target="_blank"
+        href="https://t.ly/f04A">Omar
+        Díaz</a>.</p>
+  </footer>
+</body>
+
+</html>
+<!-- Collections
+  Men
+  Women
+  About
+  Contact
+  
+  Sneaker Company
+  
+  Fall Limited Edition Sneakers
+  
+  These low-profile sneakers are your perfect casual wear companion. Featuring a
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+  
+  $125.00
+  50%
+  $250.00
+  
+  0
+  Add to cart -->
